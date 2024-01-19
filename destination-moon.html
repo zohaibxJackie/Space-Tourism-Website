@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="des-body">
+  <div class="des-main">
+    <!-- the header is same as the home page -->
+    <!-- For this page, when the name is same like hero, we will use des-hero. Because we are using the same style.css file -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="./assets/shared/logo.svg" alt="Logo"></a>
+      </div>
+
+      <button class="nav-btn" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true"
+          class="sr-only">Menu</span></button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-nav">
+          <li><span aria-hidden="true">00</span><a href="index.html">Home</a></li>
+          <li><span aria-hidden="true">01</span><a href="destination-moon.html">Destination</a></li>
+          <li><span aria-hidden="true">02</span><a href="crew-commander.html">Crew</a></li>
+          <li><span aria-hidden="true">03</span><a href="technology-capsule.html">Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="choose-destination-text">
+      <h3><span aria-hidden="true">01</span>Pick your destination</h3>
+    </div>
+
+    <div class="des-hero">
+
+      <div class="des-hero-left">
+        <img src="./assets/destination/image-moon.png" class="des-hero-img" alt="">
+      </div>
+
+      <div class="des-hero-right">
+
+        <div class="secondary-nav">
+          <button type="button" class="des-btn des-btn-1 underline-indicator" onclick="addClass(this)">Moon</button>
+          <button type="button" class="des-btn des-btn-2" onclick="addClass(this)">Mars</button>
+          <button type="button" class="des-btn des-btn-3" onclick="addClass(this)">Europa</button>
+          <button type="button" class="des-btn des-btn-4" onclick="addClass(this)">Titan</button>
+        </div>
+
+        <div class="des-text-aria">
+          <h1 class="des-planet">Moon</h1>
+          <p class="des-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+            regain perspective and come back refreshed. While you’re there, take in some history
+            by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        </div>
+        <div class="des-info-aria">
+          <div class="left">
+            <p class="font-reset-p">Avg. distance</p>
+            <h2 class="font-reset-h des-distance">384,400 km</h2>
+          </div>
+          <div class="right">
+            <p class="font-reset-p">Est. travel time</p>
+            <h2 class="font-reset-h des-time">3 days</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
